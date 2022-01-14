@@ -35,12 +35,14 @@ public class WordOccurrences {
 			try {
 				if(input.toLowerCase().equals("y") || input.toLowerCase().equals("yes"))
 				{
+					//reading from file					
 					System.out.println("Please provide the file name in .txt format with complete path");	
 					filePath= sc.next();
 					sentenceList = getSentencesFromFile (filePath);
 				}
 				else if(input.toLowerCase().equals("n") || input.toLowerCase().equals("no"))
 				{
+					//reading through command line					
 					System.out.println("Please input the text in command line (enter '~' to quit)");
 					BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -54,6 +56,7 @@ public class WordOccurrences {
 				}
 				else
 				{
+					//invalid option
 					System.out.println("Please provide a valid input");
 					System.exit(1);
 				}
@@ -73,6 +76,7 @@ public class WordOccurrences {
 
 	private static List<String> getSentencesFromFile(String filePath)
 	{
+		//reading input from file using streams and adding it to a list
 		List<String> sentenceList= new ArrayList<>();
 		try
 		{
@@ -94,6 +98,8 @@ public class WordOccurrences {
 
 	private static void getWordFrequency(List<String> inputLines) {
 
+		//calculating word frequencies using streams
+		
 		Predicate<String> isEmpty = String::isEmpty;
 		Predicate<String> notEmpty = isEmpty.negate();
 
