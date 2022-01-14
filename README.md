@@ -14,9 +14,10 @@
 ## Eclipse Instructions:
 -	Install Eclipse
 -	Set up Eclipse Preferences
+-	Download the src file from github
 -	Click on File -> Open Projects from file system
--	Select the Directory with name ProjectFanatics and click on Finish. 
--	Now Right click on the Project (ProjectFanatics) and click on Run as Java Application.
+-	Select the downloaded Directory and click on Finish. 
+-	Now Right click on the Project and click on Run as Java Application.
 -	Now interact with the Application using console.
 
 ## How to run the program?
