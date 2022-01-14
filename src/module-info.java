@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author SSUHUMAR
+ *
+ */
+module ProjectFanatics {
+}
